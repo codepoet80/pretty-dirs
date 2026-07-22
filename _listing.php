@@ -32,7 +32,7 @@ $CONFIG = [
     // Open these types in a new tab (images render inline, so a new tab keeps
     // the listing open). Everything else (PDF, doc, txt…) opens same-tab and
     // just downloads — no orphan blank tab.
-    'newtab'   => ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'mp3', 'mp4'],
+    'sametab'   => ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'mp3', 'mp4'],
 
     // Strip a trailing " recipe" word from prettified names.
     'strip_recipe_word' => true,
@@ -647,8 +647,8 @@ $noun = (string) ($CONFIG['noun'] ?? 'item');
             $href = url_path($rel);                       // relative URL to the file
             // Images open in a new tab to view; everything else gets a `download`
             // hint so the browser saves it instead of rendering inline.
-            $target = in_array($it['ext'], $CONFIG['newtab'] ?? [], true)
-                ? ' target="_blank" rel="noopener"'
+            $target = in_array($it['ext'], $CONFIG['sametab'] ?? [], true)
+                ? ' target="_self" rel="noopener"'
                 : ' download';
             $sub = strtoupper($it['ext'] ?: 'file');
         }
