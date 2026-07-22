@@ -32,7 +32,7 @@ $CONFIG = [
     // Open these types in a new tab (images render inline, so a new tab keeps
     // the listing open). Everything else (PDF, doc, txt…) opens same-tab and
     // just downloads — no orphan blank tab.
-    'newtab'   => ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'],
+    'newtab'   => ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'mp3', 'mp4'],
 
     // Strip a trailing " recipe" word from prettified names.
     'strip_recipe_word' => true,
