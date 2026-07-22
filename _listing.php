@@ -602,7 +602,7 @@ $noun = (string) ($CONFIG['noun'] ?? 'item');
 <body>
 <header>
     <h1><?= htmlspecialchars($title) ?></h1>
-    <p>Tap a card to open</p>
+    <!--<p>Tap a card to open</p>-->
 </header>
 
 <div class="toolbar">
